@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF=8" />
+<title>DDUploader test</title>
+<script src="dduploader.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	var target = document.getElementById('test');
+
+	new DDUploader(target, {
+			requestURI : 'sample.php',
+			withParams : { 'foo': 'bar' },
+			onDragStart : function() { console.log(this); },
+			onUploadSuccess : function(resp) { console.log(resp); },
+			onUploadError : function(resp) { console.log(resp); }
+		});
+}, false);
+</script>
+<style>
+#test { width : 300px; height:300px;padding:10px;border: dotted 2px #c00; }
+</style>
+</head>
+<body>
+<div id="test">
+This is sample content. when script runs, this element replaced to drop area.
+</div>
+</body>
+</html>
