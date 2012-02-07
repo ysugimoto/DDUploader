@@ -156,6 +156,11 @@
 			this.isFormDataEnable = !!win.FormData;
 			this.clone = elm.cloneNode(false);
 			this.clone.style.display = 'none';
+			this.clone.setAttribute('draggable', 'on');
+			this.clone.style.KhtmlUserDrag    = 'element';
+			this.clone.style.WebkitUserDrag   = 'element';
+			this.clone.style.KhtmlUserSelect  = 'none';
+			this.clone.style.WebkitUserSelect = 'none';
 			this.clone.appendChild(doc.createTextNode(this.params.areaText));
 			elm.parentNode.insertBefore(this.clone, elm);
 		},
