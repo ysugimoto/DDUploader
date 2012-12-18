@@ -9,17 +9,17 @@
  * Supported browser from implemented method:
  * 
  * window.FileReder
- *   Safari, Chrome, Firefox 3.6+
+ *   Safari, Chrome, Firefox 3.6+, IE10
  * window.FormData
- *   Safari, Chrome, Firefox 4+
+ *   Safari, Chrome, Firefox 4+, IE10
  * window.XMLHttpRequest.prototype.sendAsBinary
  *   Firefox 3.6+ ( Mozilla extension )
  * Drag and Drop API
- *   Safari, Chrome, Firefox 3.6+
+ *   Safari, Chrome, Firefox 3.6+, IE10
  *   
  * So this library supported:
- *   Safari, Chrome, Firefox3.6+.
- *   Opera, IE does not support...
+ *   Safari, Chrome, Firefox3.6+, IE10
+ *   Opera, IE9-- does not support...
  *   
  * --------------------------------------------------------------------
  * Usage:
